@@ -1,0 +1,467 @@
+/* ================= BASIC RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    color: #6c63ff;
+}
+
+
+#menuButton {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background-color: #f4f3ff;
+}
+
+
+.home-content {
+    max-width: 700px;
+}
+
+
+.welcome {
+    color: #6c63ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.home h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.home h2 span {
+    color: #6c63ff;
+}
+
+
+.home h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #6c63ff;
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.btn:hover {
+    background-color: #5148d8;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+section {
+    padding: 80px 10%;
+}
+
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+
+.section-description {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    background-color: #ffffff;
+}
+
+
+.about-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+.about-text {
+    flex: 1;
+}
+
+
+.about-text h3,
+.skills h3 {
+    margin-bottom: 15px;
+    color: #6c63ff;
+}
+
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+
+.skills {
+    flex: 1;
+}
+
+
+.skill-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.skill-list span {
+    background-color: #6c63ff;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    background-color: #f7f7f7;
+}
+
+
+.project-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.project-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.project-card h3 {
+    color: #6c63ff;
+
+    margin-bottom: 15px;
+}
+
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+
+.project-link {
+    color: #6c63ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background-color: #f4f3ff;
+}
+
+
+.contact-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 50px;
+}
+
+
+.contact-info {
+    flex: 1;
+}
+
+
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+
+.contact-info a {
+    color: #6c63ff;
+}
+
+
+form {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+form label {
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+form input,
+form textarea {
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+form textarea {
+    resize: vertical;
+}
+
+
+form .btn {
+    width: 150px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 768px) {
+
+    /* Mobile navigation */
+
+    #menuButton {
+        display: block;
+    }
+
+
+    .nav-links {
+        display: none;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: #222;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    /* Home */
+
+    .home h2 {
+        font-size: 38px;
+    }
+
+
+    .home h3 {
+        font-size: 22px;
+    }
+
+
+    /* About */
+
+    .about-container {
+        flex-direction: column;
+    }
+
+
+    /* Projects */
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+}
